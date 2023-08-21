@@ -10,47 +10,51 @@
       rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <h1><img src="img/icon_048280_128.png" alt="header-logo" width="45" height="45"> My-Tabi-Log</h1>
+    </div>
+
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
     <div id="container">
-      <header>
-        <div class="logo">
-          <h1><img src="img/icon_048280_128.png" alt="header-logo" width="45" height="45"> My-Tabi-Log</h1>
-        </div>
-
-        <div class="pc-menu">
-          <nav>
-            <ul>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Menu</a></li>
-            </ul>
-          </nav>
-        </div>
-        
-        <div class="sp-menu">
-          <span class="material-icons" id="open">menu</span>
-        </div>
-      </header>
-
-      <div class="overlay">
-        <span class="material-icons" id="close">close</span>
-        <nav>
-          <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </nav>
-      </div>
 
       <div class="car-all">
         <section class="carousel">
           <ul id="cal">
-            <li><img src="img/leonard-cotte-c1Jp-fo53U8-unsplash.jpg"></li>
-            <li><img src="img/john-fowler-aaIN3y2zcMQ-unsplash.jpg"></li>
-            <li><img src="img/daniele-levis-pelusi-jTknOGI18us-unsplash.jpg"></li>
-            <li><img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"></li>
+            <li><img src="img/leonard-cotte-c1Jp-fo53U8-unsplash.jpg">
+            <p><a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/c1Jp-fo53U8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/ja/@ettocl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Léonard Cotte</a>が撮影した写真</p></li>
+            <li><img src="img/john-fowler-aaIN3y2zcMQ-unsplash.jpg">
+            <p><a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/aaIN3y2zcMQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/ja/@wildhoney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Fowler</a>が撮影した写真</p></li>
+            <li><img src="img/daniele-levis-pelusi-jTknOGI18us-unsplash.jpg">
+            <p><a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/jTknOGI18us?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/ja/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a>が撮影した写真</p></li>
+            <li><img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+            <p><a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/N_Y88TWmGwA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/ja/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a>が撮影した写真</p></li>
           </ul>
           <button id="prev">&laquo;</button>
           <button id="next">&raquo;</button>
@@ -106,17 +110,24 @@
 
           <section id="useful">
             <h2>お役立ちリンク集</h2>
-            <ul>
-              <li><a href="#"><img src="img/s512_f_traffic_16_0bg.jpg" alt="icon01"> <span>おすすめリンク</span></a></li>
-              <li><a href="#"><img src="img/s512_f_traffic_30_1bg.jpg" alt="icon02"> おすすめリンク</a></li>
-              <li><a href="#"><img src="img/s512_f_traffic_45_0bg.jpg" alt="icon03"> おすすめリンク</a></li>
-            </ul>
+            <div>
+              <a href="#"><img src="img/s512_f_traffic_16_0bg.jpg" alt="icon01"> <span>おすすめリンク</span></a>
+            </div>
+            <div>
+              <a href="#"><img src="img/s512_f_traffic_30_1bg.jpg" alt="icon02"> <span>おすすめリンク</span></a>
+            </div>
+            <div>
+              <a href="#"><img src="img/s512_f_traffic_45_0bg.jpg" alt="icon03"> <span>おすすめリンク</span></a>
+            </div>
           </section>
 
-          <section id="sns">
-            <span></span>
-            <span></span>
-            <span></span>
+          <section>
+            <h2>各種SNSリンク</h2>
+            <div id="sns">
+              <span><a href="#"><img src="img/FACEBOOKのアイコン素材 3.png" alt="facebook-icon" width="30"></a></span>
+              <span><a href="#"><img src="img/インスタグラムのシンプルなロゴのアイコン 2.png" alt="insta-icon" width="30"></a></span>
+              <span><a href="#"><img src="img/Twitterのアイコン素材 2.png" alt="twitter-icon" width="30"></a></span>
+            </div>
           </section>
 
         </aside>
