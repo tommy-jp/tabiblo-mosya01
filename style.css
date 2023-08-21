@@ -21,6 +21,7 @@ ul {
   padding: 0;
 }
 
+/* スマホ画面設定 */
 /* ヘッダー */
 header {
   padding-top: 16px;
@@ -109,6 +110,10 @@ pointer-events: auto;
 .overlay.show li:nth-child(4) {
   transition-delay: .4s;
 }
+.overlay a:hover {
+  background: #d3f5ee;
+  border-radius: 50%;
+}
 
 /* カルーセル */
 .carousel {
@@ -131,6 +136,12 @@ pointer-events: auto;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .carousel p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: right;
   }
   #prev, #next {
     position: absolute;
@@ -178,11 +189,6 @@ pointer-events: auto;
   /* メイン */
   main {
     padding: 24px 16px 0;
-    display: flex;
-    gap: 8px;
-  }
-  #main {
-    width: 70%;
   }
   #main img {
     width: 100%;
@@ -205,48 +211,47 @@ pointer-events: auto;
 
   /* 右サイド */
 aside {
-  width: 30vw;
-  border-left: 1px solid #84f7e0;
   padding-left: 4px;
 }
 aside h2 {
-  margin: 24px 0;
+  margin: 18px 0;
+  border-bottom: 2px solid #84f7e0;
 }
 #update {
   margin: 16px 0;
 }
 #update dt {
   font-size: 14px;
-  border-top: 1px solid #84f7e0;
-  padding: 16px 0;
 }
 #update dd {
   font-size: 12px;
   padding-bottom: 16px;
 }
-#update dl {
-  border-bottom: 1px solid #84f7e0;
-}
 /* リンク集 */
 #useful {
   padding-left: 8px;
-  border-bottom: 1px solid #84f7e0;
 }
-#useful li {
-  padding: 24px 0;
+#useful div {
+  padding: 8px 0;
 }
-#useful li span {
+#useful div span {
   display: inline-block;
-  line-height: 1;
+  line-height: 50px;
 }
-#useful li + a {
+#useful div + a {
   cursor: pointer;
 }
 #useful img {
   width: 50px;
+  vertical-align: bottom;
 }
 /* ＮＳＮリンク */
-
+#sns {
+  display: flex;
+  padding-left: 24px;
+  gap: 16px;
+  margin-bottom: 24px;
+}
 
   
   /* フッター */
@@ -255,12 +260,16 @@ aside h2 {
     text-align: center;
   }
   footer small {
-    line-height: 100px;
+    line-height: 50px;
   }
 
 
   /* PCメニュー */
   @media (min-width: 600px) {
+    #container, header {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
     .pc-menu {
       display: block;
       margin-left: auto;
@@ -285,4 +294,75 @@ aside h2 {
     .sp-menu {
       display: none;
     }
+
+    /* メイン */
+    main {
+      padding: 24px 16px 0;
+      display: flex;
+      gap: 8px;
+    }
+    #main {
+      width: 70%;
+    }
+    #main img {
+      width: 100%;
+      height: 100%;
+    }
+    /* 右サイド */
+    aside {
+      width: 30vw;
+      border-left: 1px solid #84f7e0;
+      padding-left: 4px;
+    }
+    aside h2 {
+      margin: 24px 0;
+    }
+    #update {
+      margin: 16px 0;
+    }
+    #update dt {
+      font-size: 14px;
+      border-top: 1px solid #84f7e0;
+      padding: 16px 0;
+    }
+    #update dd {
+      font-size: 12px;
+      padding-bottom: 16px;
+    }
+    #update dl {
+      border-bottom: 1px solid #84f7e0;
+    }
+    /* リンク集 */
+    #useful {
+      padding-left: 8px;
+      border-bottom: 1px solid #84f7e0;
+    }
+    #useful div {
+      padding: 24px 0;
+    }
+    #useful div span {
+      display: inline-block;
+      line-height: 50px;
+    }
+    #useful div + a {
+      cursor: pointer;
+    }
+    #useful img {
+      width: 50px;
+      vertical-align: bottom;
+    }
+    /* ＮＳＮリンク */
+    #sns {
+      display: flex;
+      padding-left: 24px;
+      gap: 16px;
+    }
+  /* フッター */
+  footer {
+    background: #e3f3f0;
+    text-align: center;
+  }
+  footer small {
+    line-height: 100px;
+  }
   }
